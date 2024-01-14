@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashiq Plywood - Plywood Manufacturer & Supplier</title>
+    <link rel="shortcut icon" href="Aply.png">
+
+    <!-- animate css cdn -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/cooper-black');
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-image: url(https://i.postimg.cc/WbpdT9fw/ply.jpg);
+            background-size: cover;
+            background-position-y: -25px;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #logo {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Cooper Black', sans-serif;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        nav a {
+            font-family: 'Cooper Black', sans-serif;
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #3a6e32;
+            color: white;
+        }
+
+        .icon {
+            display: none; /* Hide the icon by default */
+            cursor: pointer;
+        }
+
+        section {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .animate__zoomIn{
+            animate-duration: 2s;
+            animation-delay: 2s;
+        }
+
+        .product-catalog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+            margin: 15px;
+        }
+
+        .product-card:hover{
+            transform: scale(1.02);
+            transition-duration: .5s;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 280px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            font-family: 'Cooper Black', sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo {
+                max-width: 60%;
+            }
+
+            nav a {
+                display: none; /* Hide navigation links on small screens */
+            }
+
+            .icon {
+                display: block; /* Display the icon on small screens */
+            }
+
+            .icon i {
+                font-size: 24px;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav.active a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .product-card img {
+            height: 220px;
+            }
+        }
+
+        /* Contact page styles */
+        #contact {
+            background-color: #f0f0f0;
+            margin-bottom: 30px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            max-width: 98%;
+            width: 100%;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Aply.html"><img id="logo" src="https://i.postimg.cc/yxQqcX42/Aply.png" alt="Ashiq Plywood"></a>
+
+        <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#catalog">Product Catalog</a>
+        <a href="#contact">Contact</a>
+        </nav>
+
+        <div>
+            <h1>Ashiq Plywood</h1>
+            <p>Plywood Manufacturer & Supplier</p>
+        </div>
+        <div class="icon" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+   
+    <section id="home">
+        <h2>Welcome to Plywood World!</h2>
+        <p>Plywood is a type of engineered wood product that is made from thin layers of wood veneer glued together. These layers, or plies, are oriented with their grain perpendicular to each other, which enhances the strength and stability of the material. The cross-graining of the layers helps to prevent the wood from splitting, warping, or shrinking.The manufacturing process involves peeling or slicing thin sheets of wood from a log, which are then glued together using adhesives. The result is a versatile and strong material with various applications in construction, furniture making, and other industries.<br>Plywood comes in different grades and types, each suitable for specific purposes. For example, exterior-grade plywood is designed for outdoor use and is resistant to moisture, while interior-grade plywood is meant for indoor applications. Additionally, there are different thicknesses and sizes available to accommodate various project requirements. Plywood is commonly used for sheathing, flooring, roofing, furniture, and other structural applications due to its strength and versatility.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide high-quality plywood for various applications.</p>
+    </section>
+    <section id="catalog">
+        <h2>Product Catalog</h2>
+        <p>Explore our diverse range of plywood types and products.</p>
+        <div class="product-catalog">
+            <div class="product-card animate__animated animate__zoomIn">
+                <img src="https://i.postimg.cc/sfNsBsjx/mp.png" alt="Plywood Type 1">
+                <h3>Marine Plywood</h3>
+                <p>Description of Plywood Type 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Sizes : 12mm,18mm,19mm</p>
+            </div>
+
+            <div class="product-card animate__animated animate__zoomIn">
+                <img src="https://i.postimg.cc/C1fTkfLK/gp.png" alt="Plywood Type 2">
+                <h3>Gorjon Plywood</h3>
+                <p>Description of Plywood Type 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Sizes : 6mm,12mm,18mm,25mm</p>
+            </div>
+
+            <div class="product-card animate__animated animate__zoomIn">
+                <img src="https://i.postimg.cc/xdnWWsQD/mdf-veneer-board-2009144920-n2jgd5zc.jpg" alt="Plywood Type 3">
+                <h3>Burma Teak Plywood</h3>
+                <p>Description of Plywood Type 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Sizes : 12mm,18mm</p>
+            </div>
+
+             <div class="product-card animate__animated animate__zoomIn">
+                <img src="https://i.postimg.cc/FsXLSqQQ/oak-veneer-ply-hardwood-thumbnail.jpg" alt="Plywood Type 1">
+                <h3>Crown Teak Plywood</h3>
+                <p>Description of Plywood Type 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Sizes : 6mm,12mm,18mm</p>
+            </div>
+
+            <div class="product-card animate__animated animate__zoomIn">
+                <img src="https://i.postimg.cc/3Jy3Krq8/Hardwood-Plywood-scaled.jpg" alt="Plywood Type 2">
+                <h3>Plywood Type 5</h3>
+                <p>Description of Plywood Type 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Sizes : 12mm,18mm</p>
+            </div>
+
+            <div class="product-card animate__animated animate__zoomIn">
+                <img src="https://i.postimg.cc/3Jy3Krq8/Hardwood-Plywood-scaled.jpg" alt="Plywood Type 3">
+                <h3>Plywood Type 6</h3>
+                <p>Description of Plywood Type 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Sizes : 12mm,18mm</p>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Email: info@ashiqplywood</p>
+                <p>Phone: +8801234-567890</p>
+                <p>Address: 28/1/C Toyenbee Circular Road , Motijheel, Dhaka, Bangladesh, 1000</p>
+            </div>
+            <!-- You can add a form for contact details and messages here -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ashiq Plywood</p>
+    </footer>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add smooth scroll to all internal links in the navigation menu
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+    function toggleNav() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+
+
+    </script>
+</body>
+</html>
