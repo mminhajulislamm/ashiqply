@@ -85,6 +85,11 @@
             text-align: center;
         }
 
+        .promo img{
+            width: 100%;
+            height: 400px;
+        }
+
         .animate__zoomIn{
             animate-duration: 2s;
             animation-delay: 2s;
@@ -135,9 +140,11 @@
         }
 
         .contact-info {
+            display: flex;
+            justify-content: space-between;
             max-width: 98%;
             width: 100%;
-            padding: 20px;
+            padding: 20px 150px;
             margin: 20px auto;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -193,8 +200,18 @@
                 padding: 10px;
             }
 
+            .promo img{
+                width: 100%;
+                height: 280px;
+            }
+
             .product-card img {
             height: 220px;
+            }
+
+            .contact-info{
+                display: block;
+                padding: 20px 80px;
             }
         }
 
@@ -231,6 +248,9 @@
     <section id="about">
         <h2>About Us</h2>
         <p>We provide high-quality plywood for various applications.</p>
+        <div class="promo">
+        <img src="https://i.postimg.cc/Mpx5yLvv/IMG-20240115-133612-2.jpg">
+    </div>
     </section>
     <section id="catalog">
         <h2>Plywood Catalog</h2>
@@ -281,13 +301,23 @@
         </div>
     </section>
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Get in Touch</h2>
         <div class="contact-details">
             <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <p>Email: info@ashiqplywood</p>
-                <p>Phone: +8801234-567890</p>
-                <p>Address: 28/1/C Toyenbee Circular Road , Motijheel, Dhaka, Bangladesh, 1000</p>
+
+                <div class="area">
+                    <h3>Dhaka</h3>
+                    <p>Email: info@ashiqplywood</p>
+                    <p>Phone: +8801234-567890</p>
+                    <p>Address: 28/1/C Toyenbee Circular Road ,<br> Motijheel, Dhaka, Bangladesh, 1000</p>    
+                </div>
+
+                <div class="area">
+                    <h3>Chattogram</h3>
+                    <p>Email: info@ashiqplywood</p>
+                    <p>Phone: +8801234-567890</p>
+                    <p>Address: 28/1/C Toyenbee Circular Road ,<br> Motijheel, Dhaka, Bangladesh, 1000</p>    
+                </div>
             </div>
             <!-- You can add a form for contact details and messages here -->
         </div>
