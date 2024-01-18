@@ -119,8 +119,8 @@
     }
 
     .slide img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
     }
 
@@ -157,7 +157,7 @@
 
         .product-card:hover{
             transform: scale(1.02);
-            transition-duration: .5s;
+            transition-duration: .6s;
         }
 
         .product-card img {
@@ -185,7 +185,7 @@
             justify-content: space-between;
             max-width: 98%;
             width: 100%;
-            padding: 20px 150px;
+            padding: 20px 120px;
             margin: 20px auto;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -259,7 +259,8 @@
 
         .slide {
             flex: 0 0 34%; /* Adjust the percentage based on your design */
-            margin-right: 2%; /* Adjust the margin based on your design */
+            padding: 10px;
+            margin-right: 10px;
         }
 
         .slide:last-child {
@@ -267,13 +268,23 @@
         }
 
         .slide img {
-            width: 130px;
-            height: 130px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
         }
 
        
     }
+
+     @media (max-width: 576px) {
+
+        .slide {
+            flex: 0 0 25%; /* Adjust the percentage based on your design */
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+     }
 
         
     </style>
@@ -317,7 +328,7 @@
               <p>100% High Quality</p>
             </div>
             <div class="slide">
-              <img src="https://i.postimg.cc/k5CcVprz/icons8-sand-60.png" alt="Powder Free & Hot Pressed Image">
+              <img src="https://i.postimg.cc/MKc54tv4/icons8-sand-60.png" alt="Powder Free & Hot Pressed Image">
               <p>Powder Free & Hot Pressed</p>
             </div>
             <div class="slide">
@@ -329,7 +340,7 @@
               <p>Latest Technology</p>
             </div>
             <div class="slide">
-              <img src="https://i.postimg.cc/rFTJhpF3/icons8-test-tube-64.png" alt="Chemically Treated">
+              <img src="https://i.postimg.cc/vTtYsL1J/ct.png" alt="Chemically Treated">
               <p>Chemically Treated</p>
             </div>
             <div class="slide">
@@ -337,7 +348,7 @@
               <p>Moisture & Termite Resistant</p>
             </div>
             <div class="slide">
-              <img src="https://i.postimg.cc/QNqkPbTJ/icons8-green-earth-48.png" alt="Environment Friendly">
+              <img src="https://i.postimg.cc/sfSTsHnF/icons8-green-earth-48.png" alt="Environment Friendly">
               <p>Environment Friendly</p>
             </div>
           </div>
