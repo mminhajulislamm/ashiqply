@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashiq Plywood - Plywood Manufacturer & Supplier</title>
-    <link rel="shortcut icon" href="https://i.postimg.cc/RhP08wk6/Aply.png">
+    <link rel="shortcut icon" href="https://i.postimg.cc/k5wDWqX0/A-ply.png">
 
     <!-- animate css cdn -->
     <link
@@ -25,7 +25,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f6f6f6;
             color: #333;
         }
 
@@ -34,7 +34,7 @@
             background-size: cover;
             background-position-y: -25px;
             color: #000;
-            padding: 15px;
+            padding: 15px 20px;
             text-align: center;
             display: flex;
             justify-content: space-between;
@@ -69,7 +69,7 @@
         }
 
         .nav a:hover {
-            background-color: #3a6e32;
+            background-color: #1d2a6e;
             color: white;
             border-radius: 5px;
         }
@@ -84,10 +84,52 @@
             text-align: center;
         }
 
-        .promo img{
-            width: 100%;
-            height: 400px;
+        /* about */
+
+
+        #about{
+            background-color: #f5f5f0;
         }
+        
+
+    /* slide  */
+
+    #slides-container {
+      display: flex;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slides-wrapper {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      flex: 0 0 23%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 15px;
+      margin-right: 15px;
+    }
+
+    .slide:last-child {
+      margin-right: 0;
+    }
+
+    .slide img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .slide p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /*   product  */
 
         .animate__zoomIn{
             animate-duration: 2s;
@@ -152,7 +194,7 @@
 
         footer {
             font-family: 'Cooper Black', sans-serif;
-            background-color: black;
+            background-color: #1d2a6e;
             color: #fff;
             text-align: center;
             padding: 5px 10px;
@@ -161,6 +203,7 @@
             width: 100%;
         }
 
+    
         /* Media queries for responsiveness */
 
         @media (max-width: 768px) {
@@ -199,10 +242,6 @@
                 padding: 10px;
             }
 
-            .promo img{
-                width: 100%;
-                height: 280px;
-            }
 
             .product-card img {
             height: 220px;
@@ -212,14 +251,36 @@
                 display: block;
                 padding: 20px 80px;
             }
+
+            /* Styles for the About section slider */
+        .slides-wrapper {
+            flex-wrap: nowrap; /*  */
         }
+
+        .slide {
+            flex: 0 0 48%; /* Adjust the percentage based on your design */
+            margin-right: 2%; /* Adjust the margin based on your design */
+        }
+
+        .slide:last-child {
+            margin-right: 0;
+        }
+
+        .slide img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+        }
+
+       
+    }
 
         
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img id="logo" src="https://i.postimg.cc/RhP08wk6/Aply.png" alt="Ashiq Plywood"></a>
+        <a href="index.html"><img id="logo" src="https://i.postimg.cc/k5wDWqX0/A-ply.png" alt="Ashiq Plywood"></a>
 
         <div class="nav">
             <ul>
@@ -243,14 +304,48 @@
     <section id="home">
         <h2>Welcome to Plywood World!</h2>
         <p>Plywood is a type of engineered wood product that is made from thin layers of wood veneer glued together. These layers, or plies, are oriented with their grain perpendicular to each other, which enhances the strength and stability of the material. The cross-graining of the layers helps to prevent the wood from splitting, warping, or shrinking.The manufacturing process involves peeling or slicing thin sheets of wood from a log, which are then glued together using adhesives. The result is a versatile and strong material with various applications in construction, furniture making, and other industries.</p>
-   
+    </section>
     <section id="about">
         <h2>About Us</h2>
         <p>We provide high-quality plywood for various applications.</p>
-        <div class="promo">
-        <img src="https://i.postimg.cc/Mpx5yLvv/IMG-20240115-133612-2.jpg">
-    </div>
+
+
+        <div id="slides-container">
+          <div class="slides-wrapper">
+            <div class="slide">
+              <img src="https://i.postimg.cc/XJ2yYZLp/icons8-guarantee-96.png" alt="High Quality Image">
+              <p>100% High Quality</p>
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/k5CcVprz/icons8-sand-60.png" alt="Powder Free & Hot Pressed Image">
+              <p>Powder Free & Hot Pressed</p>
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/CxKVpztR/images.png" alt="Borer Free & Anti Warp Image">
+              <p>Borer Free & Anti Warp</p>
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/G21jygZ6/icons8-technology-100.png" alt="Latest Technology Image">
+              <p>Latest Technology</p>
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/rFTJhpF3/icons8-test-tube-64.png" alt="Chemically Treated">
+              <p>Chemically Treated</p>
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/fLgvkWfT/icons8-moisture-96.png" alt="Moisture & Termite Resistant">
+              <p>Moisture & Termite Resistant</p>
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/QNqkPbTJ/icons8-green-earth-48.png" alt="Environment Friendly">
+              <p>Environment Friendly</p>
+            </div>
+          </div>
+        </div>
+
+
     </section>
+
     <section id="catalog">
         <h2>Plywood Catalog</h2>
         <p>Explore our diverse range of plywood types and products.</p>
@@ -299,6 +394,11 @@
             <!-- Add more product cards as needed -->
         </div>
     </section>
+
+
+
+
+
     <section id="contact">
         <h2>Get in Touch</h2>
         <div class="contact-details">
@@ -328,24 +428,68 @@
     <script>
 
     document.addEventListener('DOMContentLoaded', function() {
-        // Add smooth scroll to all internal links in the navigation menu
-        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    // Add smooth scroll to all internal links in the navigation menu
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
     });
+});
 
-    function toggleNav() {
-        var nav = document.querySelector('.nav');
-        nav.classList.toggle('active');
+function toggleNav() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+}
+
+
+// about slider //
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const slidesWrapper = document.querySelector('.slides-wrapper');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      if (n >= totalSlides) {
+        currentSlide = 0;
+      } else if (n < 0) {
+        currentSlide = totalSlides - 1;
+      } else {
+        currentSlide = n;
+      }
+
+      slidesWrapper.style.transform = `translateX(${-currentSlide * 33.33}%)`;
     }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function autoStart() {
+      setInterval(() => {
+        nextSlide();
+        if (currentSlide === totalSlides - 3) {
+          setTimeout(() => {
+            showSlide(0);
+          }, 5000); // Adjust the delay before restarting the slider
+        }
+      }, 5000); // Change slide every 5 seconds
+    }
+
+    autoStart();
+  });
 
 
     </script>
 </body>
 </html>
+
